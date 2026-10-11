@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HP ZGX Nano Demo Hub</title><link rel="stylesheet" href="/hub.css"></head>
+<body>
+<main id="menu">
+<h1>HP ZGX NANO</h1><h2>HP ZGX Nano Demo Hub</h2>
+<p>One system. Multiple local AI workloads.<br>Choose the experience you want to demonstrate.</p>
+<p id="status" role="status">Status: Nano ready</p>
+<div id="demos"></div>
+<button class="stop" data-stop>■ STOP CURRENT DEMO</button>
+<footer>Local AI • One workload at a time • HP ZGX Nano</footer>
+</main>
+<main id="loading" hidden><h1>HP ZGX Nano Demo Hub</h1><h2 id="loading-title"></h2><p id="loading-message" role="status"></p><p id="elapsed"></p><ul id="stages"></ul><pre id="log" hidden></pre><button id="retry" hidden>Retry</button><button class="stop" data-stop>■ STOP CURRENT DEMO</button></main>
+<section id="view" hidden><nav><button id="back">Back to hub</button><span id="view-title"></span><button data-stop>■ STOP CURRENT DEMO</button></nav><main id="external-view" hidden><h2 id="external-title"></h2><p>This demo opens in its own window. Keep this hub available to stop it or choose another demo.</p><a id="external-link" target="_blank" rel="noopener">Open demo</a></main><iframe id="demo-frame" title="Running local demo" allow="microphone; camera; autoplay; fullscreen" allowfullscreen></iframe></section>
+<script src="/hub.js"></script></body></html>
